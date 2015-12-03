@@ -1,0 +1,326 @@
+@color: #3587c6;
+
+.w1200 {
+	width: 1200px;
+	min-width: 1200px;
+	margin: 0 auto;
+}
+
+.zjd-container {
+	position: relative;
+	width: 100%;
+	height: auto;
+	// background-color: #f4f4f4;
+
+	.zjd-top.live {
+		background: url('../images/zjd-live-5a81787394.png');
+		background-size: cover;
+		height: auto;
+
+		.zjd-live {
+			width: 1200px;
+			min-width: 1200px;
+			height: auto;
+			padding-top: 40px;
+			margin-left: auto;
+			margin-right: auto;
+
+			.live-schedule {
+				float: left;
+				width: 195px;
+				height: auto;
+				margin-left: 20px;
+				margin-right: 20px;
+
+				.live-title {
+					height: 25px;
+					line-height: 25px;
+					color: #fff;
+					text-align: center;
+					font-weight: 500;
+				}
+				.up {
+					height: 30px;
+					position: relative;
+					cursor: pointer;
+
+					.icon-live-up {
+						position: absolute;
+						width: 15px;
+						height: 8px;
+						left: 90px;
+						top: 11px;
+						background: url('../images/icons/icon-live-up-3f558681a2.png');
+						background-size: cover;
+					}
+				}
+				.live-list {
+					height: auto;
+
+					.live-item {
+						position: relative;
+						width: 100%;
+						margin-top: 10px;
+						margin-bottom: 10px;
+						height: 90px;
+						border-radius: 5px;
+						background-color: #1d5988;
+
+						.icon-live-schedule {
+							position: absolute;
+							left: -20px;
+							top: -11px;
+							width: 15px;
+							height: 110px;
+							background: url('../images/icons/icon-live-schedule-18e4cd6f3e.png');
+							background-size: cover;
+						}
+
+						.live-avatar {
+							margin: 20px 15px 20px 10px;
+
+							img {
+								width: 50px;
+								height: auto;
+							}
+						}
+
+						.live-info {
+							width: 120px;
+							margin-top: 5px;
+							margin-bottom: 5px;
+
+							p {
+								color:#fff;
+								line-height:25px; 
+							}
+						}
+					}
+					.live-item:before {
+						content: "";
+						display: block;
+						position: absolute;
+						width: 0;
+					    height: 0;
+					    left: -6px;
+					    top: 40px;
+					    border-top: 5px solid transparent;
+					    border-right: 6px solid #1d5988;
+					    border-bottom: 5px solid transparent;
+					}
+					.live-item.active {
+						background-color: #def3ff;
+
+						.live-info p {
+							color: #000;
+						}
+					}
+					.live-item.active:before {
+						border-right: 10px solid #def3ff;
+					}
+				}
+				.down {
+					height: 35px;
+					position: relative;
+					cursor: pointer;
+
+					.icon-live-down {
+						position: absolute;
+						width: 15px;
+						height: 8px;
+						left: 90px;
+						top: 11px;
+						background: url('../images/icons/icon-live-down-b8186c654f.png');
+						background-size: cover;
+					}
+				}
+			}
+
+			.live-video {
+				float: left;
+				width: 695px;
+				height: 530px;
+				background-color: #000;
+			}
+
+			.live-section {
+				position: relative;
+				float: left;
+				width: 270px;
+				height: 530px;
+
+				.section-top {
+					height: auto;
+
+					.top-item {
+						float: left;
+						width: 50%;
+						line-height: 42px;
+						height: 45px;
+						border-top: 3px solid #3180bc;
+						color: #fff;
+						text-align: center;
+						background-color: #3180bc;
+						cursor: pointer;
+					}
+					.top-item.active {
+						border-top: 3px solid #fff;
+						background-color: #388bca;
+					}
+					.top-item:hover {
+						border-top: 3px solid #fff;
+						background-color: #388bca;
+					}
+				}
+
+				.section-container {
+					width: 100%;
+					height: auto;
+					background-color: #388bca;
+
+					.talk-list {
+						height: 415px;
+						overflow: auto;
+
+						.talk-item {
+							position: relative;
+							width: 100%;
+							padding-top: 20px;
+							line-height: 25px;
+							padding-right: 10px;
+							padding-bottom: 10px;
+							border-bottom: 1px solid #60a1d4;
+							color: #fff;
+
+							.talk-content {
+								margin-left: 70px;
+
+								.time {
+									color: #abcce8;
+									margin-left: 10px;
+								}
+							}
+						}
+
+						.talk-avatar {
+							position: absolute;
+							left: 20px;
+							top: 20px;
+						}
+					}
+					.talk-comment {
+						background-color: #4098d1;
+
+						.comment-input {
+							position: relative;
+							padding: 20px;
+							height: 70px;
+							
+							.icon-talk-input {
+								position: absolute;
+								top: 40px;
+								width: 229px;
+								height: 10px;
+								background: url('../images/zjd-live-talk-e97d63f905.png') no-repeat;
+								background-position: cover;
+							}
+
+							.talk-input {
+								outline: 0;
+								border: 0;
+								line-height: 25px;
+								text-indent: 8px;
+								color: #fff;
+								background-color: #4098d1;
+							}
+
+							.talk-submit {
+								position: absolute;
+								right: 25px;
+								background-color: #fff;
+								color: @color;
+								cursor: pointer;
+								padding: 1px 4px;
+								border-radius: 2px;
+							}
+						}
+					}
+				}
+
+				.icon-zjd-live-bottom {
+					position: absolute;
+					z-index: 9;
+					bottom: -16px;
+					left: 0;
+					width: 270px;
+					height: 16px;
+					background: url('../images/zjd-live-bottom-cdf6d1ef59.png');
+					background-size: cover;
+				}
+			}
+		}
+
+
+	}
+
+	.zjd-access {
+		position: relative;
+
+		.bg-line {
+			position: absolute;
+			top: 100px;
+			z-index: 10;
+			width: 100%;
+			height: 1px;
+			background-color: @color;
+		}
+
+		.w300 {
+			position: relative;
+			float: left;
+			width: 300px;
+
+			a {
+				display: block;
+				height: 225px;
+				padding-top: 45px;
+				color: #676767;
+				font-size: 1.25em;
+				text-align: center;
+			}
+
+			.icon {
+				position: absolute;
+				width: 108px;
+				height: 108px;
+				z-index: 99;
+				left: 50%;
+				margin-left: -54px;
+			}
+			.icon-newer {
+				background: url('../images/icons/icon-newer-1d80935d29.png');
+				background-size: cover;
+			}
+			.icon-master {
+				background: url('../images/icons/icon-master-9d5e9df0c5.png');
+				background-size: cover;
+			}
+			.icon-practise {
+				background: url('../images/icons/icon-practise-b67b8191a5.png');
+				background-size: cover;
+			}
+			.icon-theme {
+				background: url('../images/icons/icon-theme-2dc278d112.png');
+				background-size: cover;
+			}
+
+			em {
+				position: absolute;
+				top: 165px;
+				left:50%;
+				margin-left: -40px;
+				font-style: normal;
+			}
+		}
+	}
+}

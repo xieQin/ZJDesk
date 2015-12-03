@@ -1,0 +1,113 @@
+@color: #3587c6;
+@container-width: 1200px;
+@toolbarcolor: #e6ebec;
+
+.zj-container {
+	width: @container-width;
+	min-width: @container-width;
+	height: auto;
+	margin: auto;
+}
+
+.zj-header {
+	width: 100%;
+	height: auto;
+	
+	.zj-toolbar {
+		height: auto;
+		border-bottom: 1px solid @toolbarcolor;
+		height: 40px;
+		line-height: 40px;
+		color: @color;
+		font-size: .75em;
+		text-align: center;
+
+		.w150 {
+			float: left;
+			width: 150px;
+		}
+		.w100 {
+			float: right;
+			width: 100px;
+		}
+		.w90 {
+			float: right;
+			width: 90px;
+		}
+	}
+
+	.zj-hbar {
+		height: auto;
+	}
+
+	.zj-hsection {
+		float: left;
+		width: 50%;
+		height: auto;
+
+		a {
+			display: block;
+			color: @color;
+		}
+
+		img {
+			display: block;
+		}
+
+		.ZJDesk-logo {
+			width: 243px;
+			height: 112px;
+		}
+	}
+}
+
+.zj-footer {
+	background-color: @color;
+
+	.zj-footer-section {
+		background-color: @color;
+		height: 258px;
+	}
+
+	.zj-footer-bottom {
+		background-color: #3f3f3f;
+
+		.zj-container {
+			height: 40px;
+			line-height: 40px;
+			font-size: .75em;
+			text-align: left;
+			color: #fff;
+			background-color: #3f3f3f;
+		}
+	}
+}
+
+/*滚动条宽度*/
+::-webkit-scrollbar {
+    width: 4px;
+}
+/* 轨道样式 */
+::-webkit-scrollbar-track {
+}
+/* Handle样式 */
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba(0,0,0,0.2);
+}
+/*当前窗口未激活的情况下*/
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(0,0,0,0.1);
+}
+/*hover到滚动条上*/
+::-webkit-scrollbar-thumb:vertical:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+/*滚动条按下*/
+::-webkit-scrollbar-thumb:vertical:active{
+    background-color: rgba(0,0,0,0.7);
+}
+
+.mt45 {
+	margin-top: 45px;
+}

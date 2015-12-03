@@ -1,0 +1,160 @@
+@color: #3587c6;
+
+.zjd-container {
+	position: relative;
+	width: 100%;
+	height: auto;
+
+	.zjd-header {
+		background-color: @color;
+
+		.zj-container {
+			background-color: @color;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			color: #fff;
+			font-size: 1.25em;
+			font-family: "Microsoft YaHei";
+
+			a {
+				display: block;
+				color: #fff;
+				background-color: @color;
+			}
+
+			a.active {
+				background-color: #256fa9;
+			}
+
+			a:hover {
+				background-color: #256fa9;
+			}
+
+			.w240 {
+				float: left;
+				position: relative;
+				width: 240px;
+				cursor: pointer;
+				background-color: @color;
+				text-align: left;
+				text-indent: 1.5em;
+				
+				.icon-nav {
+					position: absolute;
+					right: 20px;
+					top: 20px;
+					width: 26px;
+					height: 14px;
+					background: url('../images/icons/icon-nav-064eef3cc1.png');
+					background-position: cover;
+				}
+
+				.header-nav {
+					display: none;
+					position: absolute;
+					z-index: 99;
+					width: 100%;
+					height: auto;
+
+					.nav-item {
+						position: relative;
+						float: left;
+						width: 100%;
+						height: 75px;
+						background-color: rgba(54, 133, 199, 1);
+
+						.item-title {
+							height: 30px;
+							margin-top: 10px;
+							color: #fff;
+							text-align: left;
+							line-height: 40px;
+						}
+
+						.item {
+							height: 35px;
+							line-height: 35px;
+
+							span.first {
+								float: left;
+								font-size: .75em;
+							}
+						}
+
+						.item-expand {
+							display: none;
+							position: relative;
+							left: 241px;
+							width: 200px;
+							top: -74px;
+							padding-top: 10px;
+							background-color: #57a3ea;
+
+							.second {
+								float: left;
+								height: 30px;
+								line-height: 15px;
+								font-size: .75em;
+								text-align: justify;
+							}
+						}
+					}
+					.nav-item:last-child:after {
+						height: 0;
+						visibility: hidden;
+					}
+					.nav-item:hover {
+						background-color: rgba(54, 133, 199, 1);
+
+						.item-expand {
+							display: block;
+						}
+					}
+					.nav-item:after {
+						position: absolute;
+						content: "";
+						left: 0;
+						bottom: 0;
+						width: 100%;
+						height: 1px;
+						background-color: #5aa2dd;
+					}
+				}
+			}
+
+			.w240:hover {
+				background-color: #256fa9;
+
+				.header-nav {
+					display: block;
+				}
+			}
+			.w240:before {
+				position: absolute;
+				content: "";
+				top: 0;
+				left: 0;
+				width: 1px;
+				height: 50px;
+				background-color:#5aa2dd;
+			}
+
+			.w240:after {
+				position: absolute;
+				content: "";
+				top: 0;
+				right: 0;
+				width: 1px;
+				height: 50px;
+				background-color:#5aa2dd;
+			}
+
+			.w140 {
+				float: left;
+				width: 140px;
+				background-color: @color;
+			}
+		}
+	}
+}

@@ -1,0 +1,389 @@
+@color: #3587c6;
+
+.zjd-container {
+	position: relative;
+	width: 100%;
+	height: auto;
+
+	.zjd-class {
+
+		.class-header {
+			.w110 {
+				float: left;
+				width: 110px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+
+				a {
+					display: block;
+					color: #666;
+				}
+			}
+
+			.w110.active {
+				background-color: #b8b8b8;
+
+				a {
+					color: #fff;
+				}
+			}
+
+			.w110:hover {
+				background-color: #b8b8b8;
+
+				a {
+					color: #fff;
+				}
+			}
+
+			.date {
+				position: relative;
+				width: 280px;
+				height: 50px;
+				line-height: 50px;
+				text-align: left;
+				color: #666;
+
+				.icon-class-date {
+					position: absolute;
+					right: 24px;
+					top: 16px;
+					width: 16px;
+					height: 16px;
+					background: url(../images/icons/icon-class-date-3d12c00b5c.png);
+					background-size: cover;
+					cursor: pointer;
+				}
+			}
+		}
+
+		.zjd-class-category {
+
+			.category-top {
+				.w165 {
+					float: left;
+					width: 165px;
+					height: 50px;
+					line-height: 50px;
+					text-align: center;
+
+					a {
+						display: block;
+						color: #666;
+					}
+				}
+				.w165.active a {
+					color: @color;
+				}
+				.w165:hover a {
+					color: @color;
+				}
+			}
+
+			.category-class {
+				margin-bottom: 50px;
+
+				.class-list {
+					position: relative;
+					margin-top: 10px;
+					padding-bottom: 5px;
+
+					.list-name {
+						position: absolute;
+						top: 3px;
+						width: 100px;
+						height: 30px;
+						line-height: 30px;
+						text-align: center;
+					}
+
+					.list-item {
+						margin-left: 100px;
+
+						.item {
+							margin: 5px;
+							width: 80px;
+							height: 25px;
+							border-radius: 3px;
+							line-height: 24px;
+							text-align: center;
+
+							a {
+								display: block;
+								color: #666;
+							}
+						}
+
+						.item.active {
+							background-color: @color;
+
+							a {
+								color: #fff;
+							}
+						}
+
+						.item:hover {
+							background-color: @color;
+
+							a {
+								color: #fff;
+							}
+						}
+					}
+				}
+			}
+
+		}
+
+		.class-list	{
+
+			h3 {
+				text-align: center;
+				font-weight: 500;
+				color: #666;
+				font-size: 1.5em;
+				margin-bottom: 0;
+			}
+			.class-section {
+				.class {
+					float: left;
+					width: 300px;
+					margin-top: 20px;
+				    padding: 8px 10px; 
+
+					img {
+						width: 100%;
+						height: auto;
+						display: block;
+					}
+					
+					.area {
+						margin-left: 10px;
+						margin-right: 10px;
+						.text {
+							margin: 12px 0;
+							text-justify:auto;
+							text-align:justify;
+						}
+						.time {
+							margin-bottom: 12px;
+							text-justify:auto;
+							text-align:justify;
+							color: #999;
+						}
+
+						span {
+							cursor: pointer;
+							color: #999;
+						}
+						.teacher {
+							margin-bottom: 12px;
+						}
+
+						.func {
+							margin-bottom: 12px;
+						}
+
+						.schedule-func {
+							margin-top: 12px;
+						    line-height: 25px;
+						}
+						.number span {
+							color: #333;
+						}
+
+						span.name {
+							color: #333;
+						}
+
+						span.public {
+							color: @color;
+						}
+
+						span.vip {
+							color: #ee4f4c;
+						}
+
+						span.schedule {
+							width: 90px;
+							height: 30px;
+							color: #fff;
+							text-align: center;
+							background-color: @color;
+						}
+
+						span.scheduled {
+							width: 90px;
+							height: 30px;
+							color: #fff;
+							text-align: center;
+							background-color: #38a938;
+						}
+					}
+				}
+			}
+		}
+
+		.class-switch {
+			.switch {
+				position: relative;
+				width: 320px;
+				height: 45px;
+				margin: 0 auto;
+				cursor: pointer;
+
+				.switch-checkbox {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					opacity: 0;
+					z-index: 5;
+					cursor: pointer;
+				}
+
+				.switch-label {
+				    position: relative;
+				    line-height: 45px;
+				    display: block;
+				    width: 320px;
+				    height: 45px;
+				    font-size: 1.125em;
+				    text-indent: 50px;
+				    line-height: 45px;
+				    background-color: #e7e7e7;
+				    border-radius: 20px;
+				    color: #666;
+				}
+
+				.switch-label:before {
+				    position: absolute;
+				    content: "课程视频";
+				    text-align: center;
+				    width: 180px;
+				    height: 45px;
+				    line-height: 45px;
+				    border-radius: 30px;
+				    text-indent: 0;
+				    color: #fff;
+				    background-color: #256fa9;
+				    z-index: 2;
+				    cursor: pointer;
+				}
+
+				.switch-label:after {
+				    position: absolute;
+				    right: -4px;
+				    content: "专辑视频";
+				    text-align: center;
+				    width: 180px;
+				    text-indent: 0;
+				    height: 45px;
+				    line-height: 45px;
+				    border-radius: 30px;
+				    color: #666;
+				    background-color: #e7e7e7;
+				    cursor: pointer;
+				}
+
+				input.switch-checkbox:checked + label:before {
+					transform:translateX(97px);
+					content: "专辑视频";
+					-webkit-transition: 0.4s;
+					-ms-transition: 0.4s;
+					-moz-transition: 0.4s;
+				    transition: 0.4s;
+				}
+
+				input.switch-checkbox + label:before {
+					transform:translateX(-52px);
+					content: "课程视频";
+					-webkit-transition: 0.4s;
+					-ms-transition: 0.4s;
+					-moz-transition: 0.4s;
+				    transition: 0.4s;
+				}
+			}
+		}
+
+		.class-more {
+			margin-top: 40px;
+			margin-bottom: 40px;
+
+			.more {
+				width: 170px;
+				margin-left: auto;
+				margin-right: auto;
+				line-height: 45px;
+				text-align: center;
+
+				a {
+					display: block;
+					color: @color;
+					border-radius: 4px;
+					border: 2px solid @color;
+				}
+			}
+		}
+
+		.class-pagination {
+			margin-top: 25px;
+			margin-bottom: 50px;
+
+			.list {
+				position: relative;
+				width: 240px;
+				margin: 0 auto;
+
+				.item {
+					width: 28px;
+					height: 28px;
+					line-height: 28px;
+					text-align: center;
+					margin-left: 2px;
+
+					a {
+						display: block;
+						color: #666;
+					}
+				}
+
+				.item.active {
+					background-color: @color;
+
+					a {
+						color: #fff;
+					}
+				}
+
+				.item:hover {
+					background-color: @color;
+
+					a {
+						color: #fff;
+					}
+				}
+
+				.icon-prev {
+					position: absolute;
+					width: 7px;
+					height: 13px;
+					left: -20px;
+					top: 8px;
+					background: url(../images/icons/icon-class-prev-0ed1d07239.png);
+					cursor: pointer;
+				}
+
+				.icon-next {
+					position: absolute;
+					width: 7px;
+					height: 13px;
+					right: -15px;
+					top: 8px;
+					background: url(../images/icons/icon-class-next-active-3e849ca950.png);
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
