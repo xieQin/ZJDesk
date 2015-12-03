@@ -1,0 +1,221 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-icon-breadcrumb-close {
+  background-image: url(../images/sprites.png);
+  background-position: -402px -92px;
+  width: 11px;
+  height: 10px;
+}
+.icon-icon-breadcrumb-right {
+  background-image: url(../images/sprites.png);
+  background-position: -408px -50px;
+  width: 6px;
+  height: 11px;
+}
+.icon-icon-breadcurmb-index {
+  background-image: url(../images/sprites.png);
+  background-position: -316px -124px;
+  width: 13px;
+  height: 11px;
+}
+.icon-icon-card {
+  background-image: url(../images/sprites.png);
+  background-position: -358px -92px;
+  width: 24px;
+  height: 22px;
+}
+.icon-icon-class-date {
+  background-image: url(../images/sprites.png);
+  background-position: -308px -148px;
+  width: 16px;
+  height: 16px;
+}
+.icon-icon-class-next-active {
+  background-image: url(../images/sprites.png);
+  background-position: -324px -148px;
+  width: 7px;
+  height: 13px;
+}
+.icon-icon-class-prev {
+  background-image: url(../images/sprites.png);
+  background-position: -331px -148px;
+  width: 7px;
+  height: 13px;
+}
+.icon-icon-comment-dislike {
+  background-image: url(../images/sprites.png);
+  background-position: -247px -169px;
+  width: 17px;
+  height: 20px;
+}
+.icon-icon-comment-light {
+  background-image: url(../images/sprites.png);
+  background-position: -230px -148px;
+  width: 18px;
+  height: 21px;
+}
+.icon-icon-comment-like {
+  background-image: url(../images/sprites.png);
+  background-position: -230px -169px;
+  width: 17px;
+  height: 20px;
+}
+.icon-icon-comment-sys {
+  background-image: url(../images/sprites.png);
+  background-position: -382px -92px;
+  width: 20px;
+  height: 20px;
+}
+.icon-icon-favor-active {
+  background-image: url(../images/sprites.png);
+  background-position: -268px -148px;
+  width: 20px;
+  height: 18px;
+}
+.icon-icon-favor {
+  background-image: url(../images/sprites.png);
+  background-position: -248px -148px;
+  width: 20px;
+  height: 18px;
+}
+.icon-icon-five {
+  background-image: url(../images/sprites.png);
+  background-position: -300px -50px;
+  width: 36px;
+  height: 36px;
+}
+.icon-icon-four {
+  background-image: url(../images/sprites.png);
+  background-position: -336px -50px;
+  width: 36px;
+  height: 36px;
+}
+.icon-icon-live-100 {
+  background-image: url(../images/sprites.png);
+  background-position: -372px -50px;
+  width: 36px;
+  height: 36px;
+}
+.icon-icon-live-down {
+  background-image: url(../images/sprites.png);
+  background-position: -371px -114px;
+  width: 13px;
+  height: 7px;
+}
+.icon-icon-live-schedule {
+  background-image: url(../images/sprites.png);
+  background-position: -216px -92px;
+  width: 14px;
+  height: 110px;
+}
+.icon-icon-live-up {
+  background-image: url(../images/sprites.png);
+  background-position: -358px -114px;
+  width: 13px;
+  height: 7px;
+}
+.icon-icon-login-account {
+  background-image: url(../images/sprites.png);
+  background-position: -216px -50px;
+  width: 42px;
+  height: 42px;
+}
+.icon-icon-login-pwd {
+  background-image: url(../images/sprites.png);
+  background-position: -258px -50px;
+  width: 42px;
+  height: 42px;
+}
+.icon-icon-master {
+  background-image: url(../images/sprites.png);
+  background-position: -108px 0px;
+  width: 108px;
+  height: 108px;
+}
+.icon-icon-nav {
+  background-image: url(../images/sprites.png);
+  background-position: -290px -124px;
+  width: 26px;
+  height: 14px;
+}
+.icon-icon-newer {
+  background-image: url(../images/sprites.png);
+  background-position: 0px -108px;
+  width: 108px;
+  height: 108px;
+}
+.icon-icon-practise {
+  background-image: url(../images/sprites.png);
+  background-position: 0px 0px;
+  width: 108px;
+  height: 108px;
+}
+.icon-icon-teacher-favor {
+  background-image: url(../images/sprites.png);
+  background-position: -288px -148px;
+  width: 20px;
+  height: 18px;
+}
+.icon-icon-teacher-tel {
+  background-image: url(../images/sprites.png);
+  background-position: -216px 0px;
+  width: 198px;
+  height: 50px;
+}
+.icon-icon-theme {
+  background-image: url(../images/sprites.png);
+  background-position: -108px -108px;
+  width: 108px;
+  height: 108px;
+}
+.icon-icon-user-000 {
+  background-image: url(../images/sprites.png);
+  background-position: -230px -92px;
+  width: 32px;
+  height: 32px;
+}
+.icon-icon-user-100 {
+  background-image: url(../images/sprites.png);
+  background-position: -294px -92px;
+  width: 32px;
+  height: 32px;
+}
+.icon-icon-user-200 {
+  background-image: url(../images/sprites.png);
+  background-position: -326px -92px;
+  width: 32px;
+  height: 32px;
+}
+.icon-icon-user-300 {
+  background-image: url(../images/sprites.png);
+  background-position: -262px -92px;
+  width: 32px;
+  height: 32px;
+}
+.icon-icon-user-vip {
+  background-image: url(../images/sprites.png);
+  background-position: -250px -124px;
+  width: 20px;
+  height: 20px;
+}
+.icon-icon-video-favor {
+  background-image: url(../images/sprites.png);
+  background-position: -270px -124px;
+  width: 20px;
+  height: 19px;
+}
+.icon-icon-video-like {
+  background-image: url(../images/sprites.png);
+  background-position: -230px -124px;
+  width: 20px;
+  height: 24px;
+}
