@@ -72,6 +72,9 @@ a {
 .inline {
   display: inline;
 }
+.bgf4f4f4 {
+  background-color: #f4f4f4;
+}
 
 .zj-container {
   width: 1200px;
@@ -1229,7 +1232,6 @@ a {
   position: relative;
   width: 100%;
   height: auto;
-  background-color: #f4f4f4;
 }
 .zjd-container .zjd-top.live {
   background: url('../images/zjd-live.png');
