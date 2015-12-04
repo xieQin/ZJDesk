@@ -231,6 +231,12 @@ Icon classes can be used entirely standalone. They are named after their origina
   width: 32px;
   height: 32px;
 }
+.icon-icon-user-point {
+  background-image: url(../images/sprites.png);
+  background-position: -389px -124px;
+  width: 8px;
+  height: 8px;
+}
 .icon-icon-user-vip {
   background-image: url(../images/sprites.png);
   background-position: -250px -124px;
