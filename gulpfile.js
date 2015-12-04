@@ -12,20 +12,13 @@ var gulp    = require('gulp'),                 //基础库
     uglify  = require('gulp-uglify'),          //js压缩
     rename = require('gulp-rename'),           //重命名
     concat  = require('gulp-concat'),          //合并文件
-    clean = require('gulp-clean'),             //清空文件夹
-    tinylr = require('tiny-lr'),               //livereload
-    server = tinylr(),
-    port = 35729,
     rev = require('gulp-rev'),                 //md5
-    livereload = require('gulp-livereload'),   //livereload
     revCollector = require('gulp-rev-collector'),
     changed = require('gulp-changed'),
-    runSequence = require('run-sequence'),
     gulpSequence = require('gulp-sequence'),
     del = require('del'),
-    spriter = require('gulp-css-spriter'),
-    spritesmith = require('gulp.spritesmith')
-    optimize = require('gulp-htmloptimize')
+    spritesmith = require('gulp.spritesmith'),
+    optimize = require('gulp-htmloptimize'),
     htmlmin = require('gulp-htmlmin');
 
 // HTML处理
@@ -35,7 +28,6 @@ gulp.task('html', function() {
 
     return gulp.src(htmlSrc)
         .pipe(changed(htmlDst))
-        // .pipe(livereload(server))
         .pipe(gulp.dest(htmlDst));
 });
 
@@ -47,7 +39,6 @@ gulp.task('g-html', function() {
         .pipe(changed(htmlDst))
         .pipe(optimize())
         .pipe(htmlmin({collapseWhitespace: true}))
-        // .pipe(livereload(server))
         .pipe(gulp.dest(htmlDst));
 });
 
@@ -71,7 +62,6 @@ gulp.task('g-css', function () {
     return gulp.src(cssSrc)
         .pipe(minifycss())
         .pipe(rev())
-        // .pipe(livereload(server))
         .pipe(gulp.dest(cssDst))
         .pipe(rev.manifest())
         .pipe(gulp.dest('./rev/css'));
@@ -106,7 +96,6 @@ gulp.task('g-images', function(){
     return gulp.src(imgSrc)
         .pipe(imagemin())
         .pipe(rev())
-        // .pipe(livereload(server))
         .pipe(gulp.dest(imgDst))
         .pipe(rev.manifest())
         .pipe(gulp.dest('./rev/images'));;
@@ -130,7 +119,6 @@ gulp.task('g-js', function () {
     return gulp.src(jsSrc)
         .pipe(uglify())
         .pipe(rev())
-        // .pipe(livereload(server))
         .pipe(gulp.dest(jsDst))
         .pipe(rev.manifest())
         .pipe(gulp.dest('./rev/js'));
@@ -172,13 +160,19 @@ gulp.task('rev-css', function() {
 
 // 清空图片、样式、js、rev
 gulp.task('clean', function() {
-    return gulp.src(['./dist/*.html','./dist/css/**/*', './dist/js/*', './dist/images/**/*'], {read: false})
-        .pipe(clean());
+    return del([
+        './dist/*.html',
+        './dist/css/**/*',
+        './dist/js/*',
+        './dist/images/**/*'
+    ]);
 });
 
 gulp.task('g-clean', function() {
-    return gulp.src(['./rev/**/*', './build/**/*.*'], {read: false})
-        .pipe(clean());
+    return del([
+        './rev/**/*',
+        './build/**/*.*'
+    ]);
 });
 
 // 默认任务 清空图片、样式、js并重建 运行语句 gulp
