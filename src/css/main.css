@@ -892,6 +892,7 @@ a {
   width: 70px;
   height: 25px;
   text-align: right;
+  color: #fff;
 }
 .zjd-teacher .teacher-list .list .item .favor .icon-favor {
   position: absolute;
@@ -978,7 +979,7 @@ a {
   margin-right: 50px;
 }
 .zjd-top.teacher-personal .teacher .teacher-info .teacher-text {
-  line-height: 25px;
+  line-height: 30px;
 }
 .zjd-top.teacher-personal .teacher .teacher-info .icon-teacher-tel {
   position: absolute;
@@ -998,18 +999,18 @@ a {
   margin-left: 80px;
   margin-right: 80px;
 }
-.zjd-top.user .zjd-user .user-nav li a {
+.zjd-top.user .zjd-user .user-nav li > a {
   display: block;
   width: 72px;
   margin-left: 29px;
   text-align: center;
   color: #fff;
 }
-.zjd-top.user .zjd-user .user-nav li:hover a {
+.zjd-top.user .zjd-user .user-nav li:hover > a {
   color: #fff53d;
   border-bottom: 2px solid #fff53d;
 }
-.zjd-top.user .zjd-user .user-nav li.active a {
+.zjd-top.user .zjd-user .user-nav li.active > a {
   color: #fff53d;
   border-bottom: 2px solid #fff53d;
 }
@@ -1026,6 +1027,9 @@ a {
 .zjd-top.user .zjd-user .user-nav .user {
   margin: 40px 65px 0 65px;
 }
+.zjd-top.user .zjd-user .user-nav .user .avatar > a {
+  display: block;
+}
 .zjd-top.user .zjd-user .user-nav .user .avatar {
   position: relative;
   width: 134px;
@@ -1034,10 +1038,15 @@ a {
   background: rgba(255, 255, 255, 0.3);
   padding: 4px;
 }
-.zjd-top.user .zjd-user .user-nav .user .avatar img {
+.zjd-top.user .zjd-user .user-nav .user .avatar img.user-avatar {
   width: 126px;
   height: 126px;
   border-radius: 50%;
+}
+.zjd-top.user .zjd-user .user-nav .user .user-avatar-modify {
+  position: absolute;
+  bottom: 4px;
+  left: 29px;
 }
 .zjd-top.user .zjd-user .user-nav .user .name {
   margin-top: 10px;

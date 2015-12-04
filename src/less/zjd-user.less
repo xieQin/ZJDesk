@@ -10,7 +10,7 @@
 			margin-left: 80px;
 			margin-right: 80px;
 
-			li a {
+			li > a {
 				display: block;
 				width: 72px;
 				margin-left: 29px;
@@ -18,12 +18,12 @@
 				color: #fff;
 			}
 
-			li:hover a {
+			li:hover > a {
 				color: #fff53d;
 				border-bottom: 2px solid #fff53d;
 			}
 
-			li.active a {
+			li.active > a {
 				color: #fff53d;
 				border-bottom: 2px solid #fff53d;
 			}
@@ -44,6 +44,10 @@
 		.user-nav .user {
 			margin: 40px 65px 0 65px;
 
+			.avatar > a {
+				display: block;
+			}
+
 			.avatar {
 				position: relative;
 				width: 134px;
@@ -52,11 +56,17 @@
 			    background: rgba(255,255,255,0.3);
 			    padding: 4px;
 
-				img {
+				img.user-avatar {
 					width: 126px;
 					height: 126px;
 					border-radius: 50%;
 				}
+			}
+
+			.user-avatar-modify {
+				position: absolute;
+				bottom: 4px;
+				left: 29px;
 			}
 
 			.name {
