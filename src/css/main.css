@@ -1629,12 +1629,12 @@ a {
 .zjd-comment .comments .comment .comment-section .comment-p .comment-like {
   position: relative;
   margin-right: 50px;
-  color: #666;
+  color: #999;
 }
 .zjd-comment .comments .comment .comment-section .comment-p .comment-dislike {
   position: relative;
   margin-right: 35px;
-  color: #666;
+  color: #999;
 }
 .zjd-comment .comments .comment .comment-section .comment-p.text {
   line-height: 25px;
