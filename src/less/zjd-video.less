@@ -1,5 +1,5 @@
 .zjd-top.video {
-	background: url('../images/zjd-live-5a81787394.png');
+	background: url('../images/zjd-live.png');
 	background-size: cover;
 	height: auto;
 
@@ -52,20 +52,14 @@
 				position: absolute;
 				top: 4px;
 				left: 0;
-				width: 20px;
-				height: 19px;
-				background: url(../images/icons/icon-video-favor.png);
-				background-size: cover;
+				cursor: pointer;
 			}
 
 			.icon-video-like {
 				position: absolute;
 				top: 2px;
 				left: 70px;
-				width: 20px;
-				height: 24px;
-				background: url(../images/icons/icon-video-like.png);
-				background-size: cover;
+				cursor: pointer;
 			}
 		}
 	}
@@ -117,7 +111,9 @@
 			position: relative;
 			height: auto;
 			min-height: 90px;
-			margin-bottom: 40px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			margin-bottom: 20px;
 
 			.comment-user {
 				position: absolute;
@@ -132,15 +128,8 @@
 
 				.icon-user-vip {
 					position: absolute;
-					width: 20px;
-					height: 20px;
 					top: 70px;
 					left: 30px;
-				}
-
-				.icon-user-vip {
-					background: url(../images/icons/icon-user-vip.png);
-					background-size: cover;
 				}
 
 			}
@@ -148,9 +137,49 @@
 			.comment-section {
 				margin-left: 120px;
 
+				.icon-comment-sys {
+					position: absolute;
+					right: 0;
+					cursor: pointer;
+				}
+
+				.icon-comment-light {
+					position: relative;
+				    float: left;
+				    margin-left: 8px;
+				    cursor: pointer;
+				}
+
+				.icon-comment-like {
+					position: absolute;
+					left: -25px;
+					cursor: pointer;
+				}
+
+				.icon-comment-dislike {
+					position: absolute;
+					left: -25px;
+					cursor: pointer;
+				}
+
 				.comment-p {
+					position: relative;
+					margin-right: 10px;
 					margin-top: 10px;
 					margin-bottom: 10px;
+					text-align: justify;
+
+					.comment-like {
+						position: relative;
+						margin-right: 50px;
+						color: #666;
+					}
+
+					.comment-dislike {
+						position: relative;
+						margin-right: 35px;
+						color: #666;
+					}
 				}
 
 				.comment-p.text {

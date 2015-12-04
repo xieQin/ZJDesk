@@ -206,7 +206,7 @@ gulp.task('watch',function(){
 
     gulp.watch('src/less/**/*.less', ['css']);
 
-    gulp.watch('src/images/**/*', function(cb) {
+    gulp.watch('src/images/**/*.png', function(cb) {
         gulpSequence(
             'images',
             'sprites',

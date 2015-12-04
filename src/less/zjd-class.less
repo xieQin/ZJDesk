@@ -49,10 +49,6 @@
 					position: absolute;
 					right: 24px;
 					top: 16px;
-					width: 16px;
-					height: 16px;
-					background: url(../images/icons/icon-class-date.png);
-					background-size: cover;
 					cursor: pointer;
 				}
 			}
@@ -146,6 +142,11 @@
 				margin-bottom: 0;
 			}
 			.class-section {
+
+				.class.user-class {
+					margin: 30px 0 0 90px;
+					padding-bottom: 10px;
+				}
 				.class {
 					float: left;
 					width: 280px;
@@ -158,10 +159,10 @@
 						height: auto;
 						display: block;
 					}
-					
+
 					.area {
-						margin-left: 10px;
-						margin-right: 10px;
+						margin-left: 20px;
+						margin-right: 20px;
 						.text {
 							margin: 12px 0;
 							text-justify:auto;
@@ -175,10 +176,10 @@
 						}
 
 						span {
-							cursor: pointer;
-							color: #999;
+							color: #333;
 						}
 						.teacher {
+							margin-top: 12px;
 							margin-bottom: 12px;
 						}
 
@@ -189,9 +190,16 @@
 						.schedule-func {
 							margin-top: 12px;
 						    line-height: 25px;
+						    color: #333;
 						}
 						.number span {
 							color: #333;
+						}
+
+						span.icon {
+							position: relative;
+							text-indent: 25px;
+							color: #999;
 						}
 
 						span.name {
@@ -209,6 +217,7 @@
 						span.schedule {
 							width: 90px;
 							height: 30px;
+							line-height: 30px;
 							color: #fff;
 							text-align: center;
 							background-color: @color;
@@ -217,9 +226,24 @@
 						span.scheduled {
 							width: 90px;
 							height: 30px;
+							line-height: 30px;
 							color: #fff;
 							text-align: center;
 							background-color: #38a938;
+						}
+
+						.icon-class-view {
+							position: absolute;
+							top: 4px;
+							left: 0;
+							cursor: pointer;
+						}
+
+						.icon-class-favor {
+							position: absolute;
+							top: 1px;
+							left: 0;
+							cursor: pointer;
 						}
 					}
 				}
@@ -309,7 +333,7 @@
 
 		.class-more {
 			margin-top: 40px;
-			margin-bottom: 40px;
+			padding-bottom: 40px;
 
 			.more {
 				width: 170px;
@@ -328,12 +352,12 @@
 		}
 
 		.class-pagination {
-			margin-top: 25px;
-			margin-bottom: 50px;
+			margin-top: 40px;
+			padding-bottom: 40px;
 
 			.list {
 				position: relative;
-				width: 240px;
+				width: 265px;
 				margin: 0 auto;
 
 				.item {
@@ -341,7 +365,8 @@
 					height: 28px;
 					line-height: 28px;
 					text-align: center;
-					margin-left: 2px;
+					margin-left: 5px;
+				    background-color: #fff;
 
 					a {
 						display: block;
@@ -367,21 +392,15 @@
 
 				.icon-prev {
 					position: absolute;
-					width: 7px;
-					height: 13px;
 					left: -20px;
 					top: 8px;
-					background: url(../images/icons/icon-class-prev.png);
 					cursor: pointer;
 				}
 
 				.icon-next {
 					position: absolute;
-					width: 7px;
-					height: 13px;
-					right: -15px;
+					right: -20px;
 					top: 8px;
-					background: url(../images/icons/icon-class-next-active.png);
 					cursor: pointer;
 				}
 			}

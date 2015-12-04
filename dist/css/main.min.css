@@ -69,11 +69,23 @@ a {
 .pt8 {
   padding-top: 8px;
 }
+.pb50 {
+  padding-bottom: 50px;
+}
 .inline {
   display: inline;
 }
 .bgf4f4f4 {
   background-color: #f4f4f4;
+}
+.bgf5f8fa {
+  background-color: f5f8fa;
+}
+.bgfff {
+  background-color: #fff;
+}
+.bgfbfbfb {
+  background-color: #fbfbfb;
 }
 
 .zj-container {
@@ -199,21 +211,21 @@ a {
   position: absolute;
   top: 5px;
   left: -20px;
-  background: url('../images/icons/icon-breadcurmb-index.png');
   content: "";
+  background-image: url(../images/sprites.png);
+  background-position: -376px -124px;
   width: 13px;
   height: 11px;
-  background-size: cover;
 }
 .zjd-container .zjd-top .zjd-breadcrumb li.item:before {
   position: absolute;
   top: 5px;
   left: -12px;
-  background: url('../images/icons/icon-breadcrumb-right.png');
   content: "";
+  background-image: url(../images/sprites.png);
+  background-position: -408px -50px;
   width: 6px;
   height: 11px;
-  background-size: cover;
 }
 .zjd-container .zjd-top .zjd-breadcrumb li.search {
   margin-left: 40px;
@@ -223,11 +235,11 @@ a {
   position: absolute;
   top: 5px;
   right: -20px;
-  background: url('../images/icons/icon-breadcrumb-close.png');
   content: "";
+  background-image: url(../images/sprites.png);
+  background-position: -358px -114px;
   width: 11px;
   height: 10px;
-  background-size: cover;
   cursor: pointer;
 }
 
@@ -271,10 +283,6 @@ a {
   position: absolute;
   right: 24px;
   top: 16px;
-  width: 16px;
-  height: 16px;
-  background: url(../images/icons/icon-class-date.png);
-  background-size: cover;
   cursor: pointer;
 }
 .zjd-container .zjd-class .zjd-class-category .category-top .w165 {
@@ -344,6 +352,10 @@ a {
   font-size: 1.5em;
   margin-bottom: 0;
 }
+.zjd-container .zjd-class .class-list .class-section .class.user-class {
+  margin: 30px 0 0 90px;
+  padding-bottom: 10px;
+}
 .zjd-container .zjd-class .class-list .class-section .class {
   float: left;
   width: 280px;
@@ -357,8 +369,8 @@ a {
   display: block;
 }
 .zjd-container .zjd-class .class-list .class-section .class .area {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .zjd-container .zjd-class .class-list .class-section .class .area .text {
   margin: 12px 0;
@@ -372,10 +384,10 @@ a {
   color: #999;
 }
 .zjd-container .zjd-class .class-list .class-section .class .area span {
-  cursor: pointer;
-  color: #999;
+  color: #333;
 }
 .zjd-container .zjd-class .class-list .class-section .class .area .teacher {
+  margin-top: 12px;
   margin-bottom: 12px;
 }
 .zjd-container .zjd-class .class-list .class-section .class .area .func {
@@ -384,9 +396,15 @@ a {
 .zjd-container .zjd-class .class-list .class-section .class .area .schedule-func {
   margin-top: 12px;
   line-height: 25px;
+  color: #333;
 }
 .zjd-container .zjd-class .class-list .class-section .class .area .number span {
   color: #333;
+}
+.zjd-container .zjd-class .class-list .class-section .class .area span.icon {
+  position: relative;
+  text-indent: 25px;
+  color: #999;
 }
 .zjd-container .zjd-class .class-list .class-section .class .area span.name {
   color: #333;
@@ -400,6 +418,7 @@ a {
 .zjd-container .zjd-class .class-list .class-section .class .area span.schedule {
   width: 90px;
   height: 30px;
+  line-height: 30px;
   color: #fff;
   text-align: center;
   background-color: #3587c6;
@@ -407,9 +426,22 @@ a {
 .zjd-container .zjd-class .class-list .class-section .class .area span.scheduled {
   width: 90px;
   height: 30px;
+  line-height: 30px;
   color: #fff;
   text-align: center;
   background-color: #38a938;
+}
+.zjd-container .zjd-class .class-list .class-section .class .area .icon-class-view {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  cursor: pointer;
+}
+.zjd-container .zjd-class .class-list .class-section .class .area .icon-class-favor {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  cursor: pointer;
 }
 .zjd-container .zjd-class .class-switch .switch {
   position: relative;
@@ -484,7 +516,7 @@ a {
 }
 .zjd-container .zjd-class .class-more {
   margin-top: 40px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 .zjd-container .zjd-class .class-more .more {
   width: 170px;
@@ -500,12 +532,12 @@ a {
   border: 2px solid #3587c6;
 }
 .zjd-container .zjd-class .class-pagination {
-  margin-top: 25px;
-  margin-bottom: 50px;
+  margin-top: 40px;
+  padding-bottom: 40px;
 }
 .zjd-container .zjd-class .class-pagination .list {
   position: relative;
-  width: 240px;
+  width: 265px;
   margin: 0 auto;
 }
 .zjd-container .zjd-class .class-pagination .list .item {
@@ -513,7 +545,8 @@ a {
   height: 28px;
   line-height: 28px;
   text-align: center;
-  margin-left: 2px;
+  margin-left: 5px;
+  background-color: #fff;
 }
 .zjd-container .zjd-class .class-pagination .list .item a {
   display: block;
@@ -533,20 +566,14 @@ a {
 }
 .zjd-container .zjd-class .class-pagination .list .icon-prev {
   position: absolute;
-  width: 7px;
-  height: 13px;
   left: -20px;
   top: 8px;
-  background: url(../images/icons/icon-class-prev.png);
   cursor: pointer;
 }
 .zjd-container .zjd-class .class-pagination .list .icon-next {
   position: absolute;
-  width: 7px;
-  height: 13px;
-  right: -15px;
+  right: -20px;
   top: 8px;
-  background: url(../images/icons/icon-class-next-active.png);
   cursor: pointer;
 }
 
@@ -591,10 +618,6 @@ a {
   position: absolute;
   right: 20px;
   top: 20px;
-  width: 26px;
-  height: 14px;
-  background: url('../images/icons/icon-nav.png');
-  background-position: cover;
 }
 .zjd-container .zjd-header .zj-container .w240 .header-nav {
   display: none;
@@ -609,6 +632,11 @@ a {
   width: 100%;
   height: 75px;
   background-color: #3685c7;
+}
+.zjd-container .zjd-header .zj-container .w240 .header-nav .nav-item .icon-arrow {
+  position: absolute;
+  top: 27px;
+  right: 25px;
 }
 .zjd-container .zjd-header .zj-container .w240 .header-nav .nav-item .item-title {
   height: 30px;
@@ -724,18 +752,10 @@ a {
 .zjd-login .icon-login-account {
   position: absolute;
   top: 36px;
-  width: 42px;
-  height: 42px;
-  background: url(../images/icons/icon-login-account.png);
-  background-size: cover;
 }
 .zjd-login .icon-login-pwd {
   position: absolute;
   top: 36px;
-  width: 42px;
-  height: 42px;
-  background: url(../images/icons/icon-login-pwd.png);
-  background-size: cover;
 }
 .zjd-login .input .text-input {
   width: 100%;
@@ -821,10 +841,10 @@ a {
   line-height: 45px;
   color: #fff;
   background-color: #3587c6;
+  font-size: 1em;
   outline: none;
   border: 0;
   font-family: "Microsoft YaHei";
-  font-size: .875em;
   cursor: pointer;
 }
 .zjd-top.register .register-ad {
@@ -853,7 +873,7 @@ a {
 }
 .zjd-teacher {
   margin-top: 20px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 .zjd-teacher .teacher-list .list {
   margin-bottom: 20px;
@@ -863,6 +883,7 @@ a {
   width: 370px;
   height: auto;
   margin-right: 45px;
+  background-color: #fff;
 }
 .zjd-teacher .teacher-list .list .item .favor {
   position: absolute;
@@ -876,20 +897,12 @@ a {
   position: absolute;
   top: 2px;
   left: 0;
-  width: 20px;
-  height: 18px;
-  background: url(../images/icons/icon-favor.png);
-  background-size: cover;
   cursor: pointer;
 }
 .zjd-teacher .teacher-list .list .item .favor .icon-favor-active {
   position: absolute;
   top: 2px;
   left: 0;
-  width: 20px;
-  height: 18px;
-  background: url(../images/icons/icon-favor-active.png);
-  background-size: cover;
   cursor: pointer;
 }
 .zjd-teacher .teacher-list .list .item img.teacher-avatar {
@@ -955,10 +968,6 @@ a {
   position: absolute;
   top: 7px;
   left: -25px;
-  width: 20px;
-  height: 18px;
-  background: url(../images/icons/icon-teacher-favor-8124ce8cc6.png);
-  background-size: cover;
 }
 .zjd-top.teacher-personal .teacher .teacher-info .teacher-class {
   padding-top: 20px;
@@ -975,10 +984,6 @@ a {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 198px;
-  height: 50px;
-  background: url(../images/icons/icon-teacher-tel-f7320546a4.png);
-  background-size: cover;
 }
 
 .zjd-top.user {
@@ -1040,33 +1045,15 @@ a {
 }
 .zjd-top.user .zjd-user .user-nav .user .icon-user-grade {
   position: absolute;
-  width: 32px;
-  height: 32px;
   top: 0;
   right: 0;
-}
-.zjd-top.user .zjd-user .user-nav .user .icon-user-grade.user-300 {
-  background: url(../images/icons/icon-user-300.png);
-  background-size: cover;
-}
-.zjd-top.user .zjd-user .user-nav .user .icon-user-grade.user-200 {
-  background: url(../images/icons/icon-user-200.png);
-  background-size: cover;
-}
-.zjd-top.user .zjd-user .user-nav .user .icon-user-grade.user-100 {
-  background: url(../images/icons/icon-user-100.png);
-  background-size: cover;
-}
-.zjd-top.user .zjd-user .user-nav .user .icon-user-grade.user-000 {
-  background: url(../images/icons/icon-user-000.png);
-  background-size: cover;
 }
 .user-section {
   margin-top: 60px;
 }
 
 .zjd-top.video {
-  background: url('../images/zjd-live-5a81787394.png');
+  background: url('../images/zjd-live.png');
   background-size: cover;
   height: auto;
 }
@@ -1114,19 +1101,13 @@ a {
   position: absolute;
   top: 4px;
   left: 0;
-  width: 20px;
-  height: 19px;
-  background: url(../images/icons/icon-video-favor.png);
-  background-size: cover;
+  cursor: pointer;
 }
 .zjd-top.video .video-info .video-icons .icon-video-like {
   position: absolute;
   top: 2px;
   left: 70px;
-  width: 20px;
-  height: 24px;
-  background: url(../images/icons/icon-video-like.png);
-  background-size: cover;
+  cursor: pointer;
 }
 .zjd-top.video .icon-zjd-video-bottom {
   position: absolute;
@@ -1165,7 +1146,9 @@ a {
   position: relative;
   height: auto;
   min-height: 90px;
-  margin-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 .zjd-comment .comments .comment .comment-user {
   position: absolute;
@@ -1179,21 +1162,49 @@ a {
 }
 .zjd-comment .comments .comment .comment-user .icon-user-vip {
   position: absolute;
-  width: 20px;
-  height: 20px;
   top: 70px;
   left: 30px;
-}
-.zjd-comment .comments .comment .comment-user .icon-user-vip {
-  background: url(../images/icons/icon-user-vip.png);
-  background-size: cover;
 }
 .zjd-comment .comments .comment .comment-section {
   margin-left: 120px;
 }
+.zjd-comment .comments .comment .comment-section .icon-comment-sys {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.zjd-comment .comments .comment .comment-section .icon-comment-light {
+  position: relative;
+  float: left;
+  margin-left: 8px;
+  cursor: pointer;
+}
+.zjd-comment .comments .comment .comment-section .icon-comment-like {
+  position: absolute;
+  left: -25px;
+  cursor: pointer;
+}
+.zjd-comment .comments .comment .comment-section .icon-comment-dislike {
+  position: absolute;
+  left: -25px;
+  cursor: pointer;
+}
 .zjd-comment .comments .comment .comment-section .comment-p {
+  position: relative;
+  margin-right: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
+  text-align: justify;
+}
+.zjd-comment .comments .comment .comment-section .comment-p .comment-like {
+  position: relative;
+  margin-right: 50px;
+  color: #666;
+}
+.zjd-comment .comments .comment .comment-section .comment-p .comment-dislike {
+  position: relative;
+  margin-right: 35px;
+  color: #666;
 }
 .zjd-comment .comments .comment .comment-section .comment-p.text {
   line-height: 25px;
