@@ -1864,6 +1864,9 @@ a {
 .zjd-container .zjd-top.live .zjd-live .live-section .section-container .talk-list .talk-item .talk-content {
   margin-left: 70px;
 }
+.zjd-container .zjd-top.live .zjd-live .live-section .section-container .talk-list .talk-item .talk-content .talk-text {
+  text-align: justify;
+}
 .zjd-container .zjd-top.live .zjd-live .live-section .section-container .talk-list .talk-item .talk-content .time {
   color: #abcce8;
   margin-left: 10px;
